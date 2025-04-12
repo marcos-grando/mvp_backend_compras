@@ -63,11 +63,11 @@ Esse container faz parte de um sistema completo e depende dos seguintes reposit�
 ### Estrutura do sistema:
 
 - 🌐 **API externa**: [FakeStore](https://fakestoreapi.com/) → usada para popular a base com produtos fictícios. O modelo `Produto` foi estruturado com base nos dados dessa API (nome, valor, imagem, etc).
-- 🔹 [`backend_categorias`](https://github.com/seu-usuario/backend_categorias) → responsável pelo cadastro e gerenciamento das categorias dos produtos
-- 🔹 [`backend_produtos`](https://github.com/seu-usuario/backend_produtos) → responsável pelo gerenciamento dos produtos (incluindo uploads das imagens dos produtos)
+- 🔹 [`backend_categorias`](https://github.com/marcos-grando/mvp_backend_categorias) → responsável pelo cadastro e gerenciamento das categorias dos produtos
+- 🔹 [`backend_produtos`](https://github.com/marcos-grando/mvp_backend_produtos) → responsável pelo gerenciamento dos produtos (incluindo uploads das imagens dos produtos)
 - 🔹 [`backend_compras`] ← Você está nesse repositório
-- 🔸 [`backend_shared`](https://github.com/seu-usuario/backend_shared) → módulo auxiliar compartilhado (banco de dados, pastas de upload, etc)
-- 💠 [`frontend`](https://github.com/seu-usuario/frontend) → interface React responsável pela exibição dos produtos, carrinho, compras e painel administrativo, conectando-se às APIs
+- 🔸 [`backend_shared`](https://github.com/marcos-grando/mvp_backend_shared) → módulo auxiliar compartilhado (banco de dados, pastas de upload, etc)
+- 💠 [`frontend`](https://github.com/marcos-grando/mvp_frontend_bigloja) → interface React responsável pela exibição dos produtos, carrinho, compras e painel administrativo, conectando-se às APIs
 
 **Esse container precisa acessar um volume compartilhado (`backend_shared`) para acessar:**
  - O banco de dados SQLite
